@@ -1,7 +1,6 @@
 import ReactDom from "react-dom";
 import "./modal.scss";
 import Close from "../images/times-close-circle.png";
-import advChest from "../images/advanced-chest.jpg";
 import React from "react";
 
 

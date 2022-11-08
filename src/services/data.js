@@ -1,4 +1,3 @@
-import advChest from "../images/advanced-chest.jpg";
 
 const data = [
   {
