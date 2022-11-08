@@ -1,3 +1,6 @@
+
+
+
 *,
 *::before,
 *::after {
@@ -6,9 +9,9 @@
   box-sizing: border-box;
 }
 
-html{
-overflow: hidden;
-}
+// html{
+// overflow: hidden;
+// }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -27,8 +30,69 @@ button {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  font-family: 'Rubik Distressed', cursive;
+
+  &-header {
+    background-color: black;
+    /* min-height: 50px; */
+    position:static;
+    padding: 10px 16px; 
+    // display:block;
+    // align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  };
+}
+.content {
+  padding: 16px;
+}
+
+.fixedTop {
+  width: 100%;
+  padding: 12px 18px;
+  position:inherit;
+  top: 0;
+  // background: rgb(251, 4, 235);
+}
+
+.fixedTop + .main-block {
+  padding-top: 102px;
+}
+
+.Title {
+  box-sizing: border-box;
+  width: 100%;
+  // display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
+  padding: 1em;
+  margin-bottom: 1em;
+  // background-color: rgb(192, 45, 26);
+  color: #fff;
+}
+
+// .sticky {
+//   position: fixed;
+//   top: 0;
+//   width: 90%;
+// }
+
+// .sticky + .content {
+//   padding-top: 102px;
+// }
+.gorilla-rack {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  width: 90%;
 }
 
 .clickMe {
@@ -37,3 +101,12 @@ button {
   font-size: 1.1rem;
   font-weight: 700;
 }
+
+
+
+// .line {
+//   width: 90%;
+//   border-top: 4px solid white;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
