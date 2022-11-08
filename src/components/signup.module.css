@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
