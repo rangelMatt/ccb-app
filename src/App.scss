@@ -16,8 +16,8 @@
 body {
   font-family: "Poppins", sans-serif;
   background-image: url(../src/images/bangsal-nam-9HMGyZJfrk8-unsplash.jpg);
-  background-size: cover;
-  background-attachment: scroll;
+  background-size:auto
+  // background-attachment:local;
 }
 
 button {
@@ -37,7 +37,7 @@ button {
   font-family: 'Rubik Distressed', cursive;
 
   &-header {
-    background-color: black;
+    // background-color: black;
     /* min-height: 50px; */
     position:static;
     padding: 10px 16px; 
@@ -104,29 +104,69 @@ button {
 
 
 
-// .line {
-//   width: 90%;
-//   border-top: 4px solid white;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+.line {
+  width: 90%;
+  border-top: 4px solid white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 // .highlight {
 //   color: #ccc;
 // }
 .icon {
-  color: grey
-}
-
-.icon:hover {
   color: white
 }
 
-.office-content {
+.icon:hover {
+  color: grey
+}
+
+.about-gym {
   align-self: flex-start;
   text-align: center;
   margin-left: 5%;
   font-size: calc(5px + 2vmin);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.headers {
+  // align-self: flex-start;
+  text-align: center;
+  margin-left: 5%;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  // font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.office-content {
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 5%;
+  font-size: calc(5px + 2vmin);
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  // background-color: black;
+}
+
+// .container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+// }
+
+.footer-container {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 5%;
+  // display: flex;
+  // flex-direction:row;
+  // justify-content: ;
+  // width: 90%;
+  /* margin-left: 5%; */
+  // background-color: black
 }

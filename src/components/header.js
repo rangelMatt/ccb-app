@@ -73,10 +73,10 @@ function Header() {
           </div>
           
         </div>
-        <div className="office-content">
-              <h2>We offer Free Weights, Specialty Bars, Selectorized (cable) Machines, Plate Loaded Machines, Chalk, Cardio Equipment, Powerlifting Equipment, Strongman Equipment.<br/>
+        <div className="about-gym">
+              <h3>We offer Free Weights, Specialty Bars, Selectorized (cable) Machines, Plate Loaded Machines, Chalk, Cardio Equipment, Powerlifting Equipment, Strongman Equipment.<br/>
 
-                Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h2>
+                Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h3>
             </div>
       </div>
     </div>
