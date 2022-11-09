@@ -3,6 +3,7 @@ import GorillaRack from "../images/gorillarack.png";
 import styles from "./signup.module.css"
 import SignUp from "./SignUp"
 import DayPass from "./DayPass"
+import ccbLogo from "../images/ccb-logo.jpeg"
 
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
 
@@ -34,7 +35,9 @@ function Header() {
 
         <header >
           <div className="Title">
-            <h1 className="main-header">Central Coast Barbell</h1>
+            <img alt="Central Coast Barbell Logo" className="main-header"
+              src={ccbLogo}
+              sizes="small"></img>
             <div>
               <h5 className="sub-header">24HR Oldschool BodyBuilding & Powerlifting training facility</h5>
             </div>
@@ -69,15 +72,17 @@ function Header() {
                 window.location.href = "https://form.jotform.com/ccbarbell1081/waiver";
               }}
             />
-            
+
           </div>
-          
+
         </div>
         <div className="about-gym">
-              <h3>We offer Free Weights, Specialty Bars, Selectorized (cable) Machines, Plate Loaded Machines, Chalk, Cardio Equipment, Powerlifting Equipment, Strongman Equipment.<br/>
-
-                Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h3>
-            </div>
+          <h3>Central Coast Barbell is an oldschool, 24-hour training facility. Our Office is open Monday-Friday 4:30 PM to 7:00 PM for New member Sign-ups.<br/>
+          <br/>
+            We offer Free Weights, Specialty Bars, Selectorized (cable) Machines, Plate Loaded Machines, Chalk, Cardio Equipment, Powerlifting Equipment, Strongman Equipment.
+            <br/><br/>
+            Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h3>
+        </div>
       </div>
     </div>
   );
