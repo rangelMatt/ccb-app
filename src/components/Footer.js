@@ -24,6 +24,8 @@ function Footer() {
           <h4><u>Day Passes:</u> $$$</h4>
           <h4><u>Monday - Friday:</u> 4:30pm - 7:00pm</h4>
           <h4><u>Saturday & Sunday:</u> By Appointment Only</h4>
+          </div>
+          <div className="Office-Info">
           <div className={styles.container}>
             <div className={styles.section}>
               <SignUp
@@ -42,7 +44,9 @@ function Footer() {
 
             </div>
           </div>
-        </div>
+          </div>
+          
+        
 
         <hr className="line"></hr>
         <div className="headers">

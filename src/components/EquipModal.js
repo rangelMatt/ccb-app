@@ -24,43 +24,84 @@ function EquipModal() {
 
   return (
     <>
-    <hr className="line"></hr>
-    <div className="headers">
-      <h1>Central Coast Barbell Equipment</h1>
-    </div>
-    <hr className="line"></hr>
-    <div className="Office-Info">
-      <div 
-        onChange={(e) => {
-          onChangeCombobox(e);
-        }}
-      >
-        {data && data.map((d) => (
-          <button
-            className="clickMe"
-            onClick={() => {
-              setState(d)
-              Toggle()
-            }}
-            key={d.id}
-            value={d.id}
-            data-toggle="modal"
-          >
-            {d.name}
-          </button>
-        ))}
-        <Modal
-        style={{ height: '200px' }}
-        show={modal}
-        title={state?.name}
-        children={state?.desc}
-        src={state?.src}
-        link={state?.link}
-        id={state?.id}
-        close={Toggle}></Modal>
+      <hr className="line"></hr>
+      <div className="headers">
+        <h1>Central Coast Barbell Equipment</h1>
+
+        <hr className="line"></hr>
+        <div>
+          <h2>
+            Upper Body
+          </h2>
+        </div>
+        <div className="equipment"
+          onChange={(e) => {
+            onChangeCombobox(e);
+          }}
+        >
+          {data.map((d, string) => d.id <= 5 && ( 
+          <div className="">
+
+            <img className="btn-group-images" alt=""
+            src={d.src}
+            ></img><button
+
+              className="clickMe"
+              onClick={() => {
+                setState(d)
+                Toggle()
+              }}
+              key={d}
+              value={d.id}
+              data-toggle="modal"
+            >
+              {d.name}
+            </button>
+            </div>
+          ))}
+
+        </div>
+        <div>
+          <h2>
+            Lower Body
+          </h2>
+          <div className="equipment"
+          onChange={(e) => {
+            onChangeCombobox(e);
+          }}
+        >
+          {data && data.map((d, indx) => d.id > 5 && (
+            <div className="btn-group">
+              <img className="btn-group-images" alt=""
+            src={d.src}
+            ></img>
+            <button
+              className="clickMe" 
+              onClick={() => {
+                setState(d)
+                Toggle()
+              }}
+              key={d}
+              value={d.id}
+              data-toggle="modal"
+            >
+              {d.name}
+            </button>
+            </div>
+          ))}
+          <Modal
+            style={{ height: '200px' }}
+            show={modal}
+            title={state?.name}
+            children={state?.desc}
+            src={state?.src}
+            link={state?.link}
+            // id={state?.id}
+            close={Toggle}></Modal>
+
+        </div>
+        </div>
       </div>
-      
-    </div>
     </>
   );
 }
