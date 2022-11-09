@@ -15,9 +15,10 @@ function Footer() {
   }, []);
   return (
     <>
-
-      <div className="Office-Info">
+    <hr className="line"></hr>
+      <div className="headers">
         <h1>Office Hours & Day Passes</h1>
+        </div>
         <hr className="line"></hr>
         <div className="office-content">
           <h4><u>Day Passes:</u> $$$</h4>
@@ -44,7 +45,10 @@ function Footer() {
         </div>
 
         <hr className="line"></hr>
-        <h1>Contact Us</h1>
+        <div className="headers">
+        <h1 >Contact Us</h1>
+        </div>
+        
         <hr className="line"></hr>
         <div className="office-content">
           <h4><u>Phone:</u> <a href="tel:+1-805-627-2329">805-627-2329</a></h4>
@@ -56,8 +60,8 @@ function Footer() {
           </a></h4>
           <h4><u>Saturday & Sunday:</u> By Appointment Only</h4>
         </div>
-      </div>
-      <footer rel="stylesheet" href="style.module.css">
+      
+      <footer >
         <div className="footer-container">
           <div className="row">
             <div className="col social-links">

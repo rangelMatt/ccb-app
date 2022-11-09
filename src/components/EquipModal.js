@@ -23,6 +23,12 @@ function EquipModal() {
   // }, []);
 
   return (
+    <>
+    <hr className="line"></hr>
+    <div className="headers">
+      <h1>Central Coast Barbell Equipment</h1>
+    </div>
+    <hr className="line"></hr>
     <div className="Office-Info">
       <div 
         onChange={(e) => {
@@ -55,6 +61,7 @@ function EquipModal() {
       </div>
       
     </div>
+    </>
   );
 }
 
