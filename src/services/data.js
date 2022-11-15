@@ -55,6 +55,13 @@ const data = [
     src: require("../images/hs-seated-leg-curl.jpg"),
     link: "https://www.instagram.com/p/CQJvnfCHbkm/?igshid=YmMyMTA2M2Y="
   },
+  {
+    id: 9,
+    name: "Cybex Squat Press",
+    desc: "This oldschool Cybex machine feels great to load up with some heavy weight for your Leg Sessions. The Variation of this Leg Press Machine is based on Leverage, instead of the traditional sled leg press, which allows for Less Friction and a Smooth Strength Curve. The Cybex Squat puts most of the Weight load on the Hips(Hamstrings, Glutes, and Abductors) in comparison to the Quads. It feels great to go deep in the range of motion, with much less stress on the Knees and a great feel to it! One of our Favorites for hitting Legs!",
+    src: require("../images/cybex_leg_press.jpg"),
+    link: "https://www.instagram.com/p/CVMpxGSL6fd/?igshid=YmMyMTA2M2Y="
+  },
 ];
 
 export default data;
