@@ -1,13 +1,21 @@
 import ReactDom from "react-dom";
 import "./modal.scss";
 import Close from "../images/times-close-circle.png";
-import React from "react";
+import React, { useCallback, useState } from "react";
+// import Image from "./image";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 
 
 
-const Modal = ({ show, close, title, children, src, id,link }) => {
-    
+const Modal = ({ show, close, title, children, src, id, link }) => {
+
+  const [isZoomed, setIsZoomed] = useState(false)
+
+  const handleZoomChange = useCallback(shouldZoom => {
+    setIsZoomed(shouldZoom)
+  }, [])
 
   return ReactDom.createPortal(
     <>
@@ -16,10 +24,10 @@ const Modal = ({ show, close, title, children, src, id,link }) => {
         onClick={() => close()}
       >
         <div className="modal" onClick={(e) => e.stopPropagation()}
-        key={id}>
+          key={id}>
           <header className="modal_header">
             <a href={link}>
-            <h2 className="modal_header-title">{title}</h2>
+              <h2 className="modal_header-title">{title}</h2>
             </a>
             <button className="close" onClick={() => close()}>
               <img src={Close} alt="close" />
@@ -27,8 +35,14 @@ const Modal = ({ show, close, title, children, src, id,link }) => {
           </header>
           <main className="modal_content"
             style={{ display: "flex" }}>
-            <div> {}
-              <img className="image" src={src} style={{ width: "100%" }} alt="" />
+            <div> { }
+              <Zoom>
+                <picture>
+                  <source media="(max-width: 800px)" srcSet={src}/>
+                  <img className="image" src={src} style={{ width: "100%" }} alt="" />
+                </picture>
+
+              </Zoom>
             </div>
             <div className="description text-break scroller"
             >{children}</div>
