@@ -2,8 +2,6 @@ import ReactDom from "react-dom";
 import "./modal.scss";
 import Close from "../images/times-close-circle.png";
 import React, { useCallback, useState }from "react";
-// import Image from "./image";
-import { Controlled as ControlledZoom} from 'react-medium-image-zoom'
 import 'react-medium-image-zoom/dist/styles.css'
 
 
