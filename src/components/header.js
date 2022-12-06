@@ -1,4 +1,4 @@
-import React, { useRef, useLayoutEffect, useCallback } from "react";
+import React, { useCallback } from "react";
 import GorillaRack from "../images/gorillarack.png";
 import styles from "./signup.module.css"
 import SignUp from "./SignUp"

@@ -1,7 +1,7 @@
 import ReactDom from "react-dom";
 import "./modal.scss";
 import Close from "../images/times-close-circle.png";
-import React, { useCallback, useState }from "react";
+import React from "react";
 import 'react-medium-image-zoom/dist/styles.css'
 
 
@@ -9,11 +9,11 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 const Modal = ({ show, close, title, children, src, id,link }) => {
     
-  const [isZoomed, setIsZoomed] = useState(false)
+  // const [isZoomed, setIsZoomed] = useState(false)
 
-  const handleZoomChange = useCallback(shouldZoom => {
-    setIsZoomed(shouldZoom)
-  }, [])
+  // const handleZoomChange = useCallback(shouldZoom => {
+  //   setIsZoomed(shouldZoom)
+  // }, [])
 
   return ReactDom.createPortal(
     <>
