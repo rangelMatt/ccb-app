@@ -75,8 +75,8 @@ button {
 .logos {
   
   position: static;
-  box-sizing: border-box;
-  display: flex;
+  box-sizing:inherit;
+  display: inherit;
   // flex-direction: column;
   justify-content: center;
   align-items: baseline;
