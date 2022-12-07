@@ -18,3 +18,10 @@ code {
   url('./fonts/rubikdistressed.regular.ttf') format('truetype');
   font-weight: normal;
 }
+
+.container-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+}

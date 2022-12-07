@@ -8,6 +8,7 @@ import icarian from "../images/icarian-logo.png"
 import hammerStrength from "../images/hammer-strength.png"
 import cybex from "../images/cybex-logo-and-tagline.jpg"
 
+
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
 
 
@@ -52,16 +53,18 @@ function Header() {
       <hr className="line"></hr>
       <div className="gorilla-rack">
         <img
-          
+
           src={GorillaRack}
           alt="gorilla-rack"
         ></img>
 
       </div>
+
       <div className="logos">
-        <img src={icarian} alt=""></img>
+        <img src={icarian} alt="" ></img>
         <img src={hammerStrength} alt=""></img>
         <img src={cybex} alt=""></img>
+
       </div>
 
       <hr className="line"></hr>
