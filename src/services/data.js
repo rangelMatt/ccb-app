@@ -3,9 +3,10 @@ const data = [
   {
     id: 1,
     name: "Icarian Standing Deltoid Raise",
+    link: "https://www.instagram.com/tv/Cfg96PClFgC/?igshid=YmMyMTA2M2Y= ",
     desc: "We have been very excited to get this Rare piece in our Gym. Very hard to find, Icarian machine. We’ve been trying to find one for almost a year, being told it’s impossible, but we got one to fit in our Gym! Overall smooth Machine.\nDefinitely feels a better connection with the lateral(middle) part of the Shoulder in comparison to using Dumbbells as a variation.\nDefinitely feel a good connection with it in the Side Delts.",
     src: require("../images/standing-delt-raise.jpg"),
-    link: "https://www.instagram.com/tv/Cfg96PClFgC/?igshid=YmMyMTA2M2Y= "
+    
   },
   {
     id: 2,
