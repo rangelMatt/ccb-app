@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import GorillaRack from "../images/gorillarack.png";
 import styles from "./signup.module.css"
 import SignUp from "./SignUp"
@@ -14,23 +14,7 @@ import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
 
 function Header() {
 
-  const shoot = useCallback((message) => {
-    alert(message);
-  }, []);
-
-  // const stickyHeader = useRef()
-  // useLayoutEffect(() => {
-  //   const mainHeader = document.getElementById('App-header');
-  //   let fixedTop = stickyHeader.current.offsetTop
-  //   const fixedHeader = () => {
-  //     if (window.pageYOffset > fixedTop) {
-  //       mainHeader.classList.add('fixedTop')
-  //     } else {
-  //       mainHeader.classList.remove('fixedTop')
-  //     }
-  //   }
-  //   window.addEventListener('scroll', fixedHeader)
-  // }, [])
+  
   return (
     <div>
       <hr className="line"></hr>
@@ -74,7 +58,10 @@ function Header() {
             <SignUp
               icon={<HiOutlineSpeakerphone />}
               title="Sign Up Here"
-              onClick={() => shoot('Know how to Swole')}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
+              }}
             />
             <DayPass
               icon={<HiOutlineKey />}

@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React from "react";
 import { FaMapMarkedAlt, FaInstagram, FaPhoneSquareAlt, FaFacebook, FaYelp } from "react-icons/fa";
 import '../App.scss'
 import styles from "./signup.module.css";
@@ -10,9 +10,7 @@ import DayPass from "./DayPass";
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
 
 function Footer() {
-  const shoot = useCallback((message) => {
-    alert(message);
-  }, []);
+
   return (
     <>
     <hr className="line"></hr>
@@ -32,11 +30,14 @@ function Footer() {
           <div className="Office-Info">
           <div className={styles.container}>
             <div className={styles.section}>
-              <SignUp
-                icon={<HiOutlineSpeakerphone />}
-                title="Sign Up Here"
-                onClick={() => shoot('Know how to Swole')}
-              />
+            <SignUp
+              icon={<HiOutlineSpeakerphone />}
+              title="Sign Up Here"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
+              }}
+            />
               <DayPass
                 icon={<HiOutlineKey />}
                 title="Day Pass"

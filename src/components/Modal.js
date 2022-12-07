@@ -7,13 +7,9 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 
 
-const Modal = ({ show, close, title, children, src, id,link }) => {
-    
-  // const [isZoomed, setIsZoomed] = useState(false)
-
-  // const handleZoomChange = useCallback(shouldZoom => {
-  //   setIsZoomed(shouldZoom)
-  // }, [])
+const Modal = ({ show, close, title, children, src, id, link }) => {
+  
+  const linked = link
 
   return ReactDom.createPortal(
     <>
@@ -22,10 +18,10 @@ const Modal = ({ show, close, title, children, src, id,link }) => {
         onClick={() => close()}
       >
         <div className="modal" onClick={(e) => e.stopPropagation()}
-        key={id}>
+          key={id}>
           <header className="modal_header">
             <a href={link}>
-            <h2 className="modal_header-title">{title}</h2>
+              <h2 className="modal_header-title">{title}</h2>
             </a>
             <button className="close" onClick={() => close()}>
               <img src={Close} alt="close" />
@@ -33,11 +29,9 @@ const Modal = ({ show, close, title, children, src, id,link }) => {
           </header>
           <main className="modal_content"
             style={{ display: "flex" }}>
-            <div> {}
-              {/* <Zoom zoomMargin={100}> */}
+            <div>
               <img className="image" src={src} style={{ width: "100%" }} alt="" />
-              {/* </Zoom> */}
-              
+
             </div>
             <div className="description text-break scroller"
             >{children}</div>
@@ -46,7 +40,11 @@ const Modal = ({ show, close, title, children, src, id,link }) => {
             <button className="modal-close" onClick={() => close()}>
               Cancel
             </button>
-            <button className="submit">Submit</button>
+            <div>
+              {linked ? (
+                <a href={link}><button className="submit">Video</button></a>
+              ): null}
+            </div>
           </footer>
         </div>
       </div>
