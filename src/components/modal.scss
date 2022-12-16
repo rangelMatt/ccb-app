@@ -24,10 +24,11 @@
     backdrop-filter: blur(5px);
     overflow-y: scroll;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-
+    text-align: center;
     transform: translateY(-600px);
     transition: all 0.4s ease;
     font-weight: bold;
+    line-height: 1.5;
     &_header {
       position: relative;
       border-bottom: 1px solid #dddddd;
@@ -59,20 +60,21 @@
 
     &_content {
       // border-bottom: 1px solid #dddddd;
-      padding: 2rem 0;
+      padding: 1rem 0;
       flex: 1 1 0px;
 
 
       .image {
         display: flex;
-        margin-left: auto;
+        margin-left: 50%;
         margin-right: auto;
         position:absolute;
         background: transparent;
         max-width: 50%;
-        height: auto;
+        height: 50%;
         border-radius: 8px;
         flex: 1 1 0px;
+        text-align: center;
       }
 
       .description {
