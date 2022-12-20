@@ -27,15 +27,19 @@ const Modal = ({ show, close, title, children, src, id, link }) => {
               <img src={Close} alt="close" />
             </button>
           </header>
+          <div>
           <main className="modal_content"
             style={{ display: "flex" }}>
-            <div>
-              <img className="image" src={src} style={{ width: "100%" }} alt="" />
+              </main>
+          </div>
+          
+            <div className="image">
+              <img  src={src} style={{ width: "50%" }} alt="" />
 
             </div>
             <div className="description text-break scroller"
             >{children}</div>
-          </main>
+          
           <footer className="modal_footer">
             <button className="modal-close" onClick={() => close()}>
               Cancel
