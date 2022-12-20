@@ -69,7 +69,7 @@ button {
   display: flex;
   flex-direction: column;
   position: static;
-  padding: 2em 1.89em 2em 1em;
+  padding: 2em 1em 2em 1em;
   // margin-bottom: 2em;
 }
 
@@ -207,6 +207,7 @@ button {
   align-self: flex-start;
   text-align: center;
   margin-left: 5%;
+  margin-right: 5%;
   font-size: calc(5px + 2vmin);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
