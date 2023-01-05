@@ -17,7 +17,7 @@ function Header() {
 
   return (
     <div>
-      <hr className="line"></hr>
+      {/* <hr className="line"></hr> */}
       <div className="App-header" id="App-header" >
 
 
