@@ -1,15 +1,24 @@
 import React from "react";
+import { Routes, Route, Link } from "react-router-dom"
+import Header from "./header";
 import "./nav.bar.scss"
 
-function NavBar() {
+import EquipModal from "./EquipModal";
+
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
+const NavBar = ({title}) => {
 
   return (
     <div className="NavBar">
       <nav>
         <ul>
-          <li><a href="#0">Home</a></li>
-          <li><a href="#0">About</a></li>
-          <li><a href="./EquipModal">Equipment</a></li>
+          <li><AnchorLink href="#header">Home</AnchorLink></li>
+          <li><AnchorLink href="#0">About</AnchorLink></li>
+          <li><AnchorLink href="#equip">Equipment</AnchorLink></li>
+          <li><AnchorLink href="#posingroom">Posing Room</AnchorLink></li>
+          <li><AnchorLink href="#officeinfo">Office/Rates</AnchorLink></li>
+          <li><AnchorLink href="#contactus">Contact Us</AnchorLink></li>
         </ul>
       </nav>
     </div>

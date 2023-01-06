@@ -5,7 +5,7 @@ function PosingRoom() {
 
 
   return (
-    <div>
+    <div id="posingroom">
       <hr className="line"></hr>
       <div className="headers">
         <h1>Posing Room</h1>

@@ -13,6 +13,7 @@ function Footer() {
 
   return (
     <>
+    <div id="officeinfo">
       <hr className="line"></hr>
       <div className="headers">
         <h1>Office Hours & Day Passes</h1>
@@ -67,7 +68,10 @@ function Footer() {
         <h4>- <u>1-Year Membership ($35/mo):</u> $420</h4>
 
       </div>
+              </div>
+              
 
+              
 
 
       <div className="Office-Info">
@@ -95,7 +99,7 @@ function Footer() {
         </div>
       </div>
       <p className="office-content">(24hr Access. Cancel Any Time, No-Cancellation Fee)</p>
-
+      <div id="contactus">
       <hr className="line"></hr>
       <div className="headers">
         <h1 >Contact Us</h1>
@@ -199,6 +203,7 @@ function Footer() {
           </div>
         </div>
       </footer>
+      </div>
     </>
   );
 }
