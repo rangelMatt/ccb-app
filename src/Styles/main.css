@@ -1,0 +1,50 @@
+
+.navbar {
+    position: relative;
+    background: black;
+}
+
+.a {
+    display: flex;
+    text-align: center;
+    margin: 20px 0px;
+    padding: 13px 25px;
+    border-radius: 15px;
+    font-size: 18px;
+    color: aliceblue;
+    transition: all 0.25s ease;
+}
+
+.a:hover {
+    background: red;
+    /* padding: 10px; */
+    transform: translateY(-5px);
+}
+
+.navlist li:hover {
+    background: red;
+}
+
+.toggle-nav {
+    display: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+@media all and ( max-width: 500px ) { 
+
+    .navbar {
+        padding: 1.6em;
+    }
+
+    .navlist {
+        flex-direction: column;
+        display: none;
+    }
+
+    .toggle-nav {
+        display: block;
+        color: white;
+    }
+
+}
