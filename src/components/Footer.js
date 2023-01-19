@@ -84,8 +84,12 @@ function Footer() {
               <div className="col">
                 <div className="copyright py-4 text-center">
                   <div className="container">
+                  <small>
+                      Owned By;{"Central Coast Barbell"}
+                    </small>
+                    <br/>
                     <small>
-                      {/* Copyright &copy;{"Matt Rangel"} */}
+                      Developed by;{"Matt Rangel"}
                     </small>
                   </div>
                 </div>

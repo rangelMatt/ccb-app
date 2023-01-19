@@ -1,13 +1,83 @@
-
-.navbar {
-    position: relative;
-    background: black;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.a {
+.navigation {
+    height: 60px;
+    width: 100%;
     display: flex;
+    align-items: center;
+    position: fixed;
+    padding: 2vw 0vw;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+
+}
+
+.brand-name {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+.navigation-menu {
+    margin-left: auto;
+}
+
+.navigation-menu ul {
+    display: flex;
+    padding: 0;
+}
+
+.navigation-menu li {
+    list-style-type: none;
+    margin: 0 1rem;
+}
+
+.navigation-menu li a {
+    text-decoration: none;
+    display: block;
+    width: 100%
+}
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.35);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: grey;
+}
+
+/* .sidenav {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    display: flex;
+    padding: 0;
+    justify-content: right;
+} */
+
+.a {
+
     text-align: center;
-    margin: 20px 0px;
+    margin: 0 1rem;
     padding: 13px 25px;
     border-radius: 15px;
     font-size: 18px;
@@ -15,36 +85,60 @@
     transition: all 0.25s ease;
 }
 
-.a:hover {
+/* .a:hover {
     background: red;
     /* padding: 10px; */
-    transform: translateY(-5px);
-}
+/* transform: translateY(-5px); */
+/* } */
 
-.navlist li:hover {
+/* .navlist li:hover {
     background: red;
-}
+} */
 
-.toggle-nav {
-    display: none;
+/* .toggle-nav { */
+/* display: none;
     margin: auto;
-    cursor: pointer;
-}
+    cursor: pointer; */
+/* } */
 
-@media all and ( max-width: 500px ) { 
+@media screen and (max-width: 768px) {
 
-    .navbar {
-        padding: 1.6em;
-    }
-
-    .navlist {
-        flex-direction: column;
-        display: none;
-    }
-
-    .toggle-nav {
+    .hamburger {
         display: block;
-        color: white;
     }
 
+    .navigation-menu ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        display: none;
+        /* // stacks li tags vertically */
+        flex-direction: row;
+        /* // makes menu span full height and width */
+        width: 100%;
+        height:max-content;
+        background-color: black;
+        border-top: 1px solid black;
+        padding-bottom: 10%;
+
+    }
+
+    .navigation-menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation-menu li a {
+        color: black;
+
+        width: 100%;
+        padding: 1.5rem 0;
+
+    }
+
+
+    .navigation-menu.expanded ul {
+        display:flex;
+        flex-direction: column;
+    }
 }

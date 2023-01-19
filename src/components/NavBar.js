@@ -1,68 +1,86 @@
-import React from "react";
-import Container from 'react-bootstrap/Container'
+import React, { useState } from "react";
 import Navbar from 'react-bootstrap/Navbar'
-import { FaBars } from 'react-icons/fa'
-// import "../Styles/main.css"
 import Nav from 'react-bootstrap/Nav'
 import {
   NavLogo,
-  // NavLink,
-  // Bars,
-  // NavMenu,
-  // NavBtn,
-  // NavBtnLink,
 } from "../Styles/NavbarElements";
 import "../Styles/main.css"
 
 function NavBar() {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <>
-      <Navbar className="navbar">
-        <span id="toggle-nav" >
-          <FaBars />
-        </span>
-        <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
+      <Navbar className="navigation">
+        <NavLogo
+          to="/">
+          <img
+            src="../images/ccb-logo.jpeg"
+            alt="centralcoastbarbell" width="90px"
+            className="brand-name" />
+        </NavLogo>
 
-              {/* <NavMenu> */}
-              <ul className="sidenav">
-                <NavLogo to="/"><img src="../images/ccb-logo.jpeg" alt="centralcoastbarbell" width="90px" />
+        <button
+          className="hamburger"
+          onClick={() => {
+            setIsNavExpanded(!isNavExpanded);
+          }}
+        >
+          {/* icon from heroicons.com */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5"
+            viewBox="0 0 20 20"
+            fill="white"
+          >
+            <path
+              fillRule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </button>
+        <div className={
+                    isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+                  }>
+              <Nav className="me-auto">
+                  {/* <NavMenu> */}
+                  <ul className="sidenav">
 
-                </NavLogo>
-                <Nav.Link
-                  href="/"
-                  activestyle={{ color: 'black' }}
-                  className="li a"
-                >
-                  Home
-                </Nav.Link>
-                <Nav.Link
-                  href="/equip"
-                  activestyle={{ color: 'black' }}
-                  className="li a"
-                >
-                  Equipment
-                </Nav.Link>
-                <Nav.Link
-                  href="/posingroom"
-                  activestyle={{ color: 'black' }}
-                  className="li a"
-                >
-                  Posing Room
-                </Nav.Link>
-                <Nav.Link
-                  href="/officeinfo"
-                  activestyle={{ color: 'black' }}
-                  className="li a"
-                >
-                  Membership/Day Pass Info
-                </Nav.Link>
-              </ul>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
+
+                    <Nav.Link
+                      href="/"
+                      activestyle={{ color: 'black' }}
+                      className="li a"
+                    >
+                      Home
+                    </Nav.Link>
+                    <Nav.Link
+                      href="/equip"
+                      activestyle={{ color: 'black' }}
+                      className="li a"
+                    >
+                      Equipment
+                    </Nav.Link>
+                    <Nav.Link
+                      href="/posingroom"
+                      activestyle={{ color: 'black' }}
+                      className="li a"
+                    >
+                      Posing Room
+                    </Nav.Link>
+                    <Nav.Link
+                      href="/officeinfo"
+                      activestyle={{ color: 'black' }}
+                      className="li a"
+                    >
+                      Membership/Day Pass Info
+                    </Nav.Link>
+                  </ul>
+
+              </Nav>
+        </div>
+
+
       </Navbar>
     </>
   );

@@ -231,12 +231,14 @@ button {
   // background-color: black;
 }
 
-// .container {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   height: 100vh;
-// }
+.container {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // height: 100vh;
+  color: grey;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .footer-container {
   margin-top: 1em;
@@ -248,4 +250,10 @@ button {
   // width: 90%;
   /* margin-left: 5%; */
   // background-color: black
+}
+
+.col social-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 5px;
 }
