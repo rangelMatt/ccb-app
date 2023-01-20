@@ -44,7 +44,7 @@ function Footer() {
                   />
                 </a>
                 <a
-                  href="+18054891618">
+                  href="tel:18054891618">
                   <FaPhoneSquareAlt
                     size={30}
                     className="icon"
