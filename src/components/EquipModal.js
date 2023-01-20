@@ -23,7 +23,7 @@ function EquipModal() {
   // }, []);
 
   return (
-    <>
+    <div id="equip">
       <hr className="line"></hr>
       <div className="headers">
         <h1>Central Coast Barbell Equipment</h1>
@@ -102,7 +102,7 @@ function EquipModal() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
