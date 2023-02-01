@@ -1,8 +1,9 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "../App.scss";
 
 import Modal from "../components/Modal";
 import data from "../services/data"
+import EquipButton from "./EquipButton";
 
 
 
@@ -40,12 +41,12 @@ function EquipModal() {
           }}
         >
           {data.map((d, string) => d.id <= 5 && (
-            <div className="">
+            <div className="btn-group">
 
               <img className="btn-group-images" alt=""
                 src={d.src}
-              ></img><button
-
+              ></img><EquipButton
+                title={d.name}
                 className="clickMe"
                 onClick={() => {
                   setState(d)
@@ -54,9 +55,7 @@ function EquipModal() {
                 key={d}
                 value={d.id}
                 data-toggle="modal"
-              >
-                {d.name}
-              </button>
+              />
             </div>
           ))}
 
@@ -75,18 +74,21 @@ function EquipModal() {
                 <img className="btn-group-images" alt=""
                   src={d.src}
                 ></img>
-                <button
-                  className="clickMe"
-                  onClick={() => {
-                    setState(d)
-                    Toggle()
-                  }}
-                  key={d}
-                  value={d.id}
-                  data-toggle="modal"
-                >
-                  {d.name}
-                </button>
+                <span>
+                  <EquipButton
+                    title={d.name}
+                    className="clickMe"
+                    onClick={() => {
+                      setState(d)
+                      Toggle()
+                    }}
+                    key={d}
+                    value={d.id}
+                    data-toggle="modal"
+                  />
+                </span>
+
+
               </div>
             ))}
             <Modal

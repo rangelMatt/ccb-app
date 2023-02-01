@@ -2,7 +2,7 @@ import React from "react";
 import GorillaRack from "../images/gorillarack.png";
 import styles from "./signup.module.css"
 import SignUp from "./SignUp"
-import DayPass from "./DayPass"
+// import DayPass from "./DayPass"
 import ccbLogo from "../images/ccb-logo.jpeg"
 import icarian from "../images/icarian-logo.png"
 import hammerStrength from "../images/hammer-strength.png"
@@ -64,7 +64,7 @@ function Header() {
                   window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
                 }}
               />
-              <DayPass
+              <SignUp
                 icon={<HiOutlineKey />}
                 title="Day Pass"
                 onClick={(e) => {

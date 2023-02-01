@@ -3,7 +3,7 @@ import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
 import '../App.scss'
 import styles from "./signup.module.css";
 import SignUp from "./SignUp";
-import DayPass from "./DayPass";
+// import DayPass from "./EquipButton";
 
 function OfficeInfo() {
   return (
@@ -34,7 +34,7 @@ function OfficeInfo() {
                   window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
                 }}
               />
-              <DayPass
+              <SignUp
                 icon={<HiOutlineKey />}
                 title="Day Pass"
                 onClick={(e) => {
@@ -81,7 +81,7 @@ function OfficeInfo() {
                 window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
               }}
             />
-            <DayPass
+            <SignUp
               icon={<HiOutlineKey />}
               title="Day Pass"
               onClick={(e) => {
