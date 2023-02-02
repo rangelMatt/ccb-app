@@ -71,7 +71,6 @@ body {
   text-align: center;
   flex-wrap: wrap;
   img {
-    text-align: center;
     align-items:inherit;
     margin: 1em;
     width: 25vw;
@@ -128,21 +127,11 @@ body {
 }
 
 .clickMe > span {
-  display: flex;
+  display: flexbox;
   flex-direction: row;
   justify-content: center;
   
 }
-
-.clickMe:hover {
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 700;
-  background-color: aqua;
-}
-
-
 
 .line {
   width: 90%;
