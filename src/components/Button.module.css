@@ -33,7 +33,20 @@
   background: rgba(212, 19, 13, 1);
 }
 
+.blackBG {
+  background: rgba(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: stretch;
+}
+
 .normalBG:hover {
+  box-shadow: 0 10px 20px -10px rgba(54, 52, 73, 0.6);
+}
+
+.blackBG:hover {
   box-shadow: 0 10px 20px -10px rgba(54, 52, 73, 0.6);
 }
 

@@ -46,7 +46,7 @@ const data = [
     id: 7,
     name: "Icarian Donkey Calf Raise",
     desc: "An Awesome oldschool Calf Machine not commonly seen in most Gyms. Personally one of my Favorite Calf Machines in our arsenal, the stretch on this machine feels great! This Machine is fairly easy to Load up with weight, as we have our Gym Pin to load up weight with 45s, past Maxing out the 400lb Stack.",
-    src: require("../images/donkey-calfraise.jpg"),
+    src: require("../images/donkeyCalfRaise.png"),
     link: "https://www.instagram.com/tv/CeYz7mOl3hN/?igshid=YmMyMTA2M2Y="
   },
   {
@@ -58,11 +58,18 @@ const data = [
   },
   {
     id: 9,
-    name: "Cybex Squat Press",
+    name: "CYBEX Squat Press",
     desc: "This oldschool Cybex machine feels great to load up with some heavy weight for your Leg Sessions. The Variation of this Leg Press Machine is based on Leverage, instead of the traditional sled leg press, which allows for Less Friction and a Smooth Strength Curve. The Cybex Squat puts most of the Weight load on the Hips(Hamstrings, Glutes, and Abductors) in comparison to the Quads. It feels great to go deep in the range of motion, with much less stress on the Knees and a great feel to it! One of our Favorites for hitting Legs!",
-    src: require("../images/cybex_leg_press.jpg"),
+    src: require("../images/cybexLegPress.png"),
     link: "https://www.instagram.com/p/CVMpxGSL6fd/?igshid=YmMyMTA2M2Y="
-  },
+  // },{
+  //   id: 10,
+  //   name: "EQUIPMENT NAME",
+  //   desc: "DESCRIPTION HERE",
+  //   src: require("../images/seated-tricep-dip.jpg"),
+  //   link: "https://www.instagram.com/p/CVMpxGSL6fd/?igshid=YmMyMTA2M2Y="
+  // },
+  }
 ];
 
 export default data;

@@ -2,12 +2,12 @@ import React from "react";
 import classNames from "classnames";
 import styles from "./Button.module.css";
 
-const DayPass = ({ icon, hasIconRight, title, onClick, primary }) => {
+const EquipButton = ({ icon, hasIconRight, title, onClick, primary }) => {
   return (
     <button
       className={classNames([
         styles.button,
-        primary ? styles.primaryBG : styles.normalBG,
+        primary ? styles.primaryBG : styles.blackBG,
         hasIconRight && styles.reverse,
       ])}
       onClick={onClick}
@@ -28,4 +28,4 @@ const DayPass = ({ icon, hasIconRight, title, onClick, primary }) => {
   );
 };
 
-export default DayPass;
+export default EquipButton;
