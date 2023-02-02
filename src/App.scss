@@ -70,8 +70,9 @@ body {
   display: flexbox;
   text-align: center;
   flex-wrap: wrap;
+
   img {
-    align-items:inherit;
+    align-items: inherit;
     margin: 1em;
     width: 25vw;
     padding-bottom: 2em;
@@ -126,11 +127,11 @@ body {
   // justify-content: center;
 }
 
-.clickMe > span {
+.clickMe>span {
   display: flexbox;
   flex-direction: row;
   justify-content: center;
-  
+
 }
 
 .line {
@@ -180,6 +181,14 @@ body {
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   // background-color: black;
+}
+
+a {
+  color: #FFF;
+}
+
+a:hover {
+  color: #00F
 }
 
 .container {
