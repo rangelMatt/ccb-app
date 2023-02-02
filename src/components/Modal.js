@@ -20,7 +20,9 @@ const Modal = ({ show, close, title, children, src, id, link }) => {
         <div className="modal" onClick={(e) => e.stopPropagation()}
           key={id}>
           <header className="modal_header">
-            <a href={link}>
+            <a href={link}
+            style={{textDecoration: 'none'}}
+            >
               <h2 className="modal_header-title">{title}</h2>
             </a>
             <button className="close" onClick={() => close()}>
