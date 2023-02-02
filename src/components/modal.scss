@@ -36,13 +36,13 @@
 
       &-title {
         text-align: center;
-
+        text-decoration: none;
         color: rgb(9, 8, 8);
 
         
       }
       &-title:hover {
-        color: #00F
+        text-decoration: underline;
       }
       
 
