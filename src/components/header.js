@@ -10,11 +10,13 @@ import cybex from "../images/cybex-logo-and-tagline.jpg"
 
 
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
+// import Carousel from "./Carousel";
 
 function Header() {
 
   return (
-    <div >
+    <>
+      <div >
 
 
         {/* <hr className="line"></hr> */}
@@ -76,6 +78,9 @@ function Header() {
             </div>
 
           </div>
+          <div>
+
+          </div>
           <div className="about-gym">
             <h3>Central Coast Barbell is an oldschool, 24-hour training facility. Our Office is open Monday-Friday 4:30 PM to 7:00 PM for New member Sign-ups.<br />
               <br />
@@ -83,8 +88,12 @@ function Header() {
               <br /><br />
               Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h3>
           </div>
+
         </div>
-    </div>
+      </div>
+      {/* <Carousel /> */}
+      <hr className="line"></hr>
+    </>
   );
 }
 export default Header;

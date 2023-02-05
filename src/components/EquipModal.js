@@ -3,7 +3,6 @@ import "../App.scss";
 
 import Modal from "../components/Modal";
 import data from "../services/data"
-import EquipButton from "./EquipButton";
 
 
 
@@ -45,7 +44,7 @@ function EquipModal() {
 
               <img className="btn-group-images" alt=""
                 src={d.src}
-              ></img><EquipButton
+              ></img><button
                 title={d.name}
                 className="clickMe"
                 onClick={() => {
@@ -55,7 +54,7 @@ function EquipModal() {
                 key={d}
                 value={d.id}
                 data-toggle="modal"
-              />
+              >{d.name}</button>
             </div>
           ))}
 
@@ -75,7 +74,7 @@ function EquipModal() {
                   src={d.src}
                 ></img>
                 <span>
-                  <EquipButton
+                  <button
                     title={d.name}
                     className="clickMe"
                     onClick={() => {
@@ -85,7 +84,7 @@ function EquipModal() {
                     key={d}
                     value={d.id}
                     data-toggle="modal"
-                  />
+                  >{d.name}</button>
                 </span>
 
 
