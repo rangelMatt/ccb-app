@@ -10,7 +10,7 @@ import cybex from "../images/cybex-logo-and-tagline.jpg"
 
 
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 
 function Header() {
 
@@ -91,7 +91,7 @@ function Header() {
 
         </div>
       </div>
-      <Carousel />
+      {/* <Carousel /> */}
       <hr className="line"></hr>
     </>
   );
