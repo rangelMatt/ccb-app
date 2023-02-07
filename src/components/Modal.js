@@ -8,7 +8,7 @@ import 'react-medium-image-zoom/dist/styles.css'
 
 
 const Modal = ({ show, close, title, children, src, id, link }) => {
-  
+
   const linked = link
 
   return ReactDom.createPortal(
@@ -21,35 +21,48 @@ const Modal = ({ show, close, title, children, src, id, link }) => {
           key={id}>
           <header className="modal_header">
             <a href={link}
-            style={{textDecoration: 'none'}}
+              style={{ textDecoration: 'none' }}
             >
               <h2 className="modal_header-title">{title}</h2>
             </a>
-            <button className="close" onClick={() => close()}>
-              <img src={Close} alt="close" />
+            <button
+              className="close"
+              onClick={() => close()}
+              aria-label="*">
+              <img
+                src={Close}
+                alt="close"
+                aria-label="*" />
             </button>
           </header>
           <div>
-          <main className="modal_content"
-            style={{ display: "flex" }}>
-              </main>
+            <main className="modal_content"
+              style={{ display: "flex" }}>
+            </main>
           </div>
-          
-            <div className="image">
-              <img  src={src} style={{ width: "50%" }} alt="" />
 
-            </div>
-            <div className="description text-break scroller"
-            >{children}</div>
-          
+          <div className="image">
+            <img
+              src={src}
+              style={{ width: "50%" }}
+              alt=""
+              aria-label="*" />
+
+          </div>
+          <div className="description text-break scroller"
+          >{children}</div>
+
           <footer className="modal_footer">
-            <button className="modal-close" onClick={() => close()}>
+            <button 
+            className="modal-close" 
+            onClick={() => close()}
+            aria-label="*">
               Cancel
             </button>
             <div>
               {linked ? (
                 <a href={link}><button className="submit">Video</button></a>
-              ): null}
+              ) : null}
             </div>
           </footer>
         </div>

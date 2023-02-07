@@ -21,13 +21,18 @@ function Header() {
 
         {/* <hr className="line"></hr> */}
         <div className="App-header" id="App-header" >
-
+          <title>Central Coast Barbell</title>
+        <meta
+        name="Fitness center in Grover Beach Arroyo Grande Oceano Pismo Beach Avila San Luis Obispo Gym Barbell Strongman Strong Man Body Building Fitness Crossfit Cross Fit exercise fitness training health and well ness lose weight nutrition shape studio weight lifting workout "></meta>
 
           <header >
             <div className="Title" alt="Central Coast Barbell Gym Membership Open Twenty Four Hours. ">
-              <img alt="Central Coast Barbell Logo" className="main-header"
+              <img
+                alt="Central Coast Barbell Logo"
+                className="main-header"
                 src={ccbLogo}
-                sizes="small"></img>
+                sizes="small"
+                aria-label="*"></img>
               <div>
                 <h5 className="sub-header" alt="Fitness Bodybuilding BodyBuilder Powerlifting Powerlifter lift Exercise">24HR Oldschool BodyBuilding & Powerlifting training facility</h5>
               </div>
@@ -39,17 +44,26 @@ function Header() {
         <hr className="line"></hr>
         <div className="gorilla-rack">
           <img
-
             src={GorillaRack}
             alt="gorilla-rack dumb bell rack weights"
+            aria-label="*"
           ></img>
 
         </div>
 
         <div className="logos">
-          <img src={icarian} alt="icarian equipment" ></img>
-          <img src={hammerStrength} alt="hammer strength equipment"></img>
-          <img src={cybex} alt="cybex equipment"></img>
+          <img
+            src={icarian}
+            alt="icarian equipment"
+            aria-label="*" ></img>
+          <img
+            src={hammerStrength}
+            alt="hammer strength equipment"
+            aria-label="*"></img>
+          <img
+            src={cybex}
+            alt="cybex equipment"
+            aria-label="*"></img>
 
         </div>
 
@@ -65,6 +79,7 @@ function Header() {
                   e.preventDefault();
                   window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
                 }}
+                aria-label="*"
               />
               <SignUp
                 icon={<HiOutlineKey />}
@@ -73,6 +88,7 @@ function Header() {
                   e.preventDefault();
                   window.location.href = "https://form.jotform.com/ccbarbell1081/waiver";
                 }}
+                aria-label="*"
               />
 
             </div>

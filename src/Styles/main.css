@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 
 .navigation {
@@ -10,6 +11,7 @@
     display: flex;
     align-items: center;
     position: fixed;
+    
     padding: 2vw 0vw;
     background-color: rgb(0, 0, 0);
     color: black;
@@ -22,10 +24,12 @@
     color: black;
     font-size: 1.3rem;
     margin-left: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .navigation-menu {
     margin-left: auto;
+    
 }
 
 .navigation-menu ul {
@@ -64,15 +68,6 @@
 .hamburger:hover {
     background-color: grey;
 }
-
-/* .sidenav {
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    display: flex;
-    padding: 0;
-    justify-content: right;
-} */
 
 .a {
 

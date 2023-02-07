@@ -24,6 +24,7 @@ function EquipModal() {
 
   return (
     <div id="equip">
+      <title>Gym Equipment at Central Coast Barbell</title>
       <hr className="line"></hr>
       <div className="headers">
         <h1>Central Coast Barbell Equipment</h1>
@@ -42,8 +43,11 @@ function EquipModal() {
           {data.map((d, string) => d.id <= 5 && (
             <div className="btn-group">
 
-              <img className="btn-group-images" alt=""
+              <img
+                className="btn-group-images"
+                alt=""
                 src={d.src}
+                aria-label="*"
               ></img><button
                 title={d.name}
                 className="clickMe"
@@ -54,10 +58,10 @@ function EquipModal() {
                 key={d}
                 value={d.id}
                 data-toggle="modal"
+                aria-label="*"
               >{d.name}</button>
             </div>
           ))}
-
         </div>
         <div>
           <h2>
@@ -70,8 +74,11 @@ function EquipModal() {
           >
             {data && data.map((d, indx) => d.id > 5 && (
               <div className="btn-group">
-                <img className="btn-group-images" alt=""
+                <img
+                  className="btn-group-images"
+                  alt=""
                   src={d.src}
+                  aria-label="*"
                 ></img>
                 <span>
                   <button
@@ -84,6 +91,7 @@ function EquipModal() {
                     key={d}
                     value={d.id}
                     data-toggle="modal"
+                    aria-label="*"
                   >{d.name}</button>
                 </span>
 
@@ -98,7 +106,8 @@ function EquipModal() {
               src={state?.src}
               link={state?.link}
               // id={state?.id}
-              close={Toggle}></Modal>
+              close={Toggle}
+              aria-label="*"></Modal>
 
           </div>
         </div>

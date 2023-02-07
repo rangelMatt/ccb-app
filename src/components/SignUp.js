@@ -11,6 +11,7 @@ const SignUp = ({ icon, hasIconRight, title, onClick, primary }) => {
         hasIconRight && styles.reverse,
       ])}
       onClick={onClick}
+      aria-label="*"
       >
       {!!icon && (
         <span

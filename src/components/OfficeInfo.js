@@ -33,6 +33,7 @@ function OfficeInfo() {
                   e.preventDefault();
                   window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
                 }}
+                aria-label="*"
               />
               <SignUp
                 icon={<HiOutlineKey />}
@@ -41,6 +42,7 @@ function OfficeInfo() {
                   e.preventDefault();
                   window.location.href = "https://form.jotform.com/ccbarbell1081/waiver";
                 }}
+                aria-label="*"
               />
 
             </div>
@@ -80,6 +82,7 @@ function OfficeInfo() {
                 e.preventDefault();
                 window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
               }}
+              aria-label="*"
             />
             <SignUp
               icon={<HiOutlineKey />}
@@ -88,6 +91,7 @@ function OfficeInfo() {
                 e.preventDefault();
                 window.location.href = "https://form.jotform.com/ccbarbell1081/waiver";
               }}
+              aria-label="*"
             />
 
           </div>

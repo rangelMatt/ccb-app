@@ -6,6 +6,7 @@ function PosingRoom() {
 
   return (
     <div id="posingroom">
+      <title>Private Posing Room with Mirrors</title>
       <hr className="line"></hr>
       <div className="headers">
         <h1>Posing Room</h1>
@@ -19,6 +20,7 @@ function PosingRoom() {
         <img
           src={posingRoom}
           alt="gorilla-rack"
+          aria-label="*"
         ></img>
       </div>
     </div>
