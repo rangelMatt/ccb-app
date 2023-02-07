@@ -6,6 +6,7 @@ function Footer() {
 
   return (
     <>
+    <title>Location of Central Coast Barbell</title>
       <div id="officeinfo">
 
 
@@ -19,6 +20,7 @@ function Footer() {
                     size={30}
                     className="icon"
                     alt="Instagram Lift"
+                    aria-label="*"
                   />
                 </a>
                 <a
@@ -26,6 +28,7 @@ function Footer() {
                   <FaFacebook
                     size={30}
                     className="icon"
+                    aria-label="*"
                   />
                 </a>
                 <a
@@ -33,6 +36,7 @@ function Footer() {
                   <FaYelp
                     size={30}
                     className="icon"
+                    aria-label="*"
                   />
                 </a>
                 <a
@@ -41,6 +45,7 @@ function Footer() {
                     size={30}
                     className="icon"
                     alt="Location Grover Beach Arroyo Grande Oceano Nipomo Pismo Avila SLO San Luis Obispo Fitness Lifting Machines"
+                    aria-label="*"
                   />
                 </a>
                 <a
@@ -49,6 +54,7 @@ function Footer() {
                     size={30}
                     className="icon"
                     alt="Phone Number Text Contact Info Information"
+                    aria-label="*"
                   />
                 </a>
               </div>
@@ -84,12 +90,16 @@ function Footer() {
               <div className="col">
                 <div className="copyright py-4 text-center">
                   <div className="container">
-                  <small>
-                      Owned By;{"Central Coast Barbell"}
-                    </small>
-                    <br/>
                     <small>
-                      Developed by;{"Matt Rangel"}
+                      <p>Owned By;Central Coast Barbell
+                        {/* <script>document.write(new Date().getFullYear())</script> */}
+                        </p>
+                    </small>
+                    <br />
+                    <small>
+                      Developed and Designed by;{"Matt Rangel"}
+
+
                     </small>
                   </div>
                 </div>

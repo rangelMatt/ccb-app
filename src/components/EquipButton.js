@@ -5,13 +5,14 @@ import styles from "./Button.module.css";
 const EquipButton = ({ icon, hasIconRight, title, onClick, primary }) => {
   return (
     <button
+      aria-label="*"
       className={classNames([
         styles.button,
         primary ? styles.primaryBG : styles.blackBG,
         hasIconRight && styles.reverse,
       ])}
       onClick={onClick}
-      >
+    >
       {!!icon && (
         <span
           className={classNames([
