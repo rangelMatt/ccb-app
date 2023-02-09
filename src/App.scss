@@ -166,6 +166,11 @@ body {
   color: grey
 }
 
+a .designedBy {
+
+  color: unset;
+}
+
 .about-gym {
   align-self: flex-start;
   text-align: center;
@@ -192,15 +197,25 @@ body {
   font-size: calc(5px + 2vmin);
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-decoration: none;
   // background-color: black;
 }
 
-a {
+.contactUsLink {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+.contactUsLink:hover {
+  text-decoration: underline;
+}
+
+.designedBy {
+  color: gray;
+  text-decoration: none;
+}
+
+.designedBy:hover {
   text-decoration: underline;
 }
 

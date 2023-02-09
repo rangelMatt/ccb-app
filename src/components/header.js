@@ -25,30 +25,29 @@ function Header() {
       {/* <hr className="line"></hr> */}
       <header className="App-header"
         id="App-header" >
-        <div className="Title" alt="Central Coast Barbell Gym Membership Open Twenty Four Hours. ">
+        <section className="Title" alt="Central Coast Barbell Gym Membership Open Twenty Four Hours. ">
           <img alt="Central Coast Barbell Logo" className="main-header"
             src={ccbLogo}
             sizes="small"></img>
-          <div>
             <h5 className="sub-header" alt="Fitness Bodybuilding BodyBuilder Powerlifting Powerlifter lift Exercise">24HR Oldschool BodyBuilding & Powerlifting training facility</h5>
-          </div>
-        </div>
+        </section>
       </header>
 
       <hr className="line"></hr>
-      <div className="gorilla-rack">
+      <section className="gorilla-rack">
         <img
-
+          aria-label="*"
           src={GorillaRack}
           alt="gorilla-rack dumb bell rack weights"
         ></img>
 
-      </div>
+      </section>
 
       <section className="logos">
-        <img src={icarian} alt="icarian equipment" ></img>
-        <img src={hammerStrength} alt="hammer strength equipment"></img>
-        <img src={cybex} alt="cybex equipment"></img>
+        <img src={icarian} alt="icarian equipment"
+          aria-label="*" ></img>
+        <img src={hammerStrength} alt="hammer strength equipment" aria-label="*"></img>
+        <img src={cybex} alt="cybex equipment" aria-label="*"></img>
 
       </section>
 
@@ -64,6 +63,7 @@ function Header() {
                 e.preventDefault();
                 window.location.href = "https://form.jotform.com/ccbarbell1081/membership-information-record";
               }}
+              aria-label="*"
             />
             <SignUp
               icon={<HiOutlineKey />}
@@ -72,6 +72,7 @@ function Header() {
                 e.preventDefault();
                 window.location.href = "https://form.jotform.com/ccbarbell1081/waiver";
               }}
+              aria-label="*"
             />
           </section>
         </span>
