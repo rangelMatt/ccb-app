@@ -17,7 +17,9 @@ function Header() {
   return (
     <>
       <head>
-
+        <title>Central Coast Barbell</title>
+        <meta
+          name="Fitness center in Grover Beach Arroyo Grande Oceano Pismo Beach Avila San Luis Obispo Gym Barbell Strongman Strong Man Body Building Fitness Crossfit Cross Fit exercise fitness training health and well ness lose weight nutrition shape studio weight lifting workout "></meta>
       </head>
 
       {/* <hr className="line"></hr> */}
