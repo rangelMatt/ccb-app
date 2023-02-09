@@ -24,23 +24,25 @@ function EquipModal() {
 
   return (
     <div id="equip">
+      <head>
+        <title>Gym Equipment</title>
+        <meta
+          name="Not only the best equipment for body building, strongman, crossfit, but for the general fitness enthusiast as well. Treadmill, step machine, elliptical."></meta>
+      </head>
       <hr className="line"></hr>
-      <div className="headers">
+      <header className="headers">
         <h1>Central Coast Barbell Equipment</h1>
 
         <hr className="line"></hr>
-        <div>
-          <h2>
-            Upper Body
-          </h2>
-        </div>
-        <div className="equipment"
+        <h2>
+          Upper Body
+        </h2>
+        <section className="equipment"
           onChange={(e) => {
             onChangeCombobox(e);
-          }}
-        >
+          }}>
           {data.map((d, string) => d.id <= 5 && (
-            <div className="btn-group">
+            <span className="btn-group">
 
               <img className="btn-group-images" alt=""
                 src={d.src}
@@ -55,54 +57,50 @@ function EquipModal() {
                 value={d.id}
                 data-toggle="modal"
               >{d.name}</button>
-            </div>
+            </span>
           ))}
 
-        </div>
-        <div>
-          <h2>
-            Lower Body
-          </h2>
-          <div className="equipment"
-            onChange={(e) => {
-              onChangeCombobox(e);
-            }}
-          >
-            {data && data.map((d, indx) => d.id > 5 && (
-              <div className="btn-group">
-                <img className="btn-group-images" alt=""
-                  src={d.src}
-                ></img>
-                <span>
-                  <button
-                    title={d.name}
-                    className="clickMe"
-                    onClick={() => {
-                      setState(d)
-                      Toggle()
-                    }}
-                    key={d}
-                    value={d.id}
-                    data-toggle="modal"
-                  >{d.name}</button>
-                </span>
+        </section>
 
-
-              </div>
-            ))}
-            <Modal
-              style={{ height: '200px' }}
-              show={modal}
-              title={state?.name}
-              children={state?.desc}
-              src={state?.src}
-              link={state?.link}
-              // id={state?.id}
-              close={Toggle}></Modal>
-
-          </div>
-        </div>
-      </div>
+        <h2>
+          Lower Body
+        </h2>
+        <section className="equipment"
+          onChange={(e) => {
+            onChangeCombobox(e);
+          }}
+        >
+          {data && data.map((d, indx) => d.id > 5 && (
+            <span className="btn-group">
+              <img className="btn-group-images" alt=""
+                src={d.src}
+              ></img>
+              <span>
+                <button
+                  title={d.name}
+                  className="clickMe"
+                  onClick={() => {
+                    setState(d)
+                    Toggle()
+                  }}
+                  key={d}
+                  value={d.id}
+                  data-toggle="modal"
+                >{d.name}</button>
+              </span>
+            </span>
+          ))}
+          <Modal
+            style={{ height: '200px' }}
+            show={modal}
+            title={state?.name}
+            children={state?.desc}
+            src={state?.src}
+            link={state?.link}
+            // id={state?.id}
+            close={Toggle}></Modal>=
+        </section>
+      </header>
     </div>
   );
 }

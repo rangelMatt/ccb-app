@@ -50,28 +50,32 @@ function NavBar() {
                     <Nav.Link
                       href="/"
                       activestyle={{ color: 'black' }}
-                      className="li a"
+                      className="li link"
+                      aria-label="*"
                     >
                       Home
                     </Nav.Link>
                     <Nav.Link
                       href="/equip"
                       activestyle={{ color: 'black' }}
-                      className="li a"
+                      className="li link"
+                      aria-label="*"
                     >
                       Equipment
                     </Nav.Link>
                     <Nav.Link
                       href="/posingroom"
                       activestyle={{ color: 'black' }}
-                      className="li a"
+                      className="li link"
+                      aria-label="*"
                     >
                       Posing Room
                     </Nav.Link>
                     <Nav.Link
                       href="/officeinfo"
                       activestyle={{ color: 'black' }}
-                      className="li a"
+                      className="li link"
+                      aria-label="*"
                     >
                       Membership/Day Pass Info
                     </Nav.Link>
