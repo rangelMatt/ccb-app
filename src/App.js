@@ -18,20 +18,14 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <NavBar />
-        <div>
-          <Routes>
-            <Route path='/' element={< Header />}/>
-            <Route path='/equip' element={< EquipModal />}/>
-            <Route path='/posingroom' element={< PosingRoom />}/>
-            <Route path='/officeinfo' element={< OfficeInfo />}/>
-          </Routes>
-          {/* <Header />
-          <EquipModal />
-          <PosingRoom />
-          <Footer /> */}
-          <Footer />
-        </div>
 
+        <Routes>
+          <Route path='/' element={< Header />} />
+          <Route path='/equip' element={< EquipModal />} />
+          <Route path='/posingroom' element={< PosingRoom />} />
+          <Route path='/officeinfo' element={< OfficeInfo />} />
+        </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
 

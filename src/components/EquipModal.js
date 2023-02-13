@@ -59,9 +59,7 @@ function EquipModal() {
               >{d.name}</button>
             </span>
           ))}
-
         </section>
-
         <h2>
           Lower Body
         </h2>
@@ -98,7 +96,7 @@ function EquipModal() {
             src={state?.src}
             link={state?.link}
             // id={state?.id}
-            close={Toggle}></Modal>=
+            close={Toggle}></Modal>
         </section>
       </header>
     </div>

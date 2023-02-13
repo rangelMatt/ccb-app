@@ -10,7 +10,7 @@ import cybex from "../images/cybex-logo-and-tagline.jpg"
 
 
 import { HiOutlineSpeakerphone, HiOutlineKey } from "react-icons/hi";
-// import Carousel from "./Carousel";
+import Carousel from "./Carousel";
 
 function Header() {
 
@@ -84,7 +84,7 @@ function Header() {
             Central Coast Barbell strives to offer a Focused & Supportive environment/community for all fitness levels.</h3>
         </p>
       </main>
-      {/* <Carousel /> */}
+      <Carousel />
       <hr className="line"></hr>
     </>
   );

@@ -11,13 +11,12 @@ const EquipButton = ({ icon, hasIconRight, title, onClick, primary }) => {
         hasIconRight && styles.reverse,
       ])}
       onClick={onClick}
-      >
+    >
       {!!icon && (
         <span
           className={classNames([
             styles.icon,
             hasIconRight && styles.iconRight,
-
           ])}
         >
           {icon}

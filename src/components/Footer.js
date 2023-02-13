@@ -69,11 +69,11 @@ function Footer() {
               <span className="copyright py-4 text-center">
                 <section className="container">
                   <small>
-                    Owned By;{"Central Coast Barbell "}{new Date().getFullYear()}
+                    Owned By: &copy;{new Date().getFullYear()}{" Central Coast Barbell"}
                   </small>
                   <br />
                   <small>
-                    Developed and Designed by;{designedBy}
+                    Developed and Designed by: {designedBy}
                   </small>
                 </section>
               </span>
