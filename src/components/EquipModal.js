@@ -6,6 +6,7 @@ import data from "../services/data"
 
 
 
+
 function EquipModal() {
   const [state, setState] = useState()
   const [modal, setModal] = useState(false);
@@ -18,6 +19,7 @@ function EquipModal() {
     setState(selectedEquipState)
   }
 
+  
   // useEffect(() => {
   //   console.log(setState(data));
   // }, []);
@@ -44,9 +46,20 @@ function EquipModal() {
           {data.map((d, string) => d.id <= 5 && (
             <span className="btn-group">
 
-              <img className="btn-group-images" alt=""
+              {/* <a > */}
+                <img className="btn-group-images" alt=""
                 src={d.src}
-              ></img><button
+                title={d.name}
+                onClick={() => {
+                  setState(d)
+                  Toggle()
+                }}
+                key={d}
+                value={d.id}
+                data-toggle="modal"
+              ></img>
+                {/* </a> */}
+                <button
                 title={d.name}
                 className="clickMe"
                 onClick={() => {
@@ -72,6 +85,14 @@ function EquipModal() {
             <span className="btn-group">
               <img className="btn-group-images" alt=""
                 src={d.src}
+                title={d.name}
+                onClick={() => {
+                  setState(d)
+                  Toggle()
+                }}
+                key={d}
+                value={d.id}
+                data-toggle="modal"
               ></img>
               <span>
                 <button

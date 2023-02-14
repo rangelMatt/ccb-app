@@ -14,7 +14,7 @@ import OfficeInfo from "./components/OfficeInfo";
 const App = () => {
 
   return (
-
+    
     <BrowserRouter>
       <div className="App">
         <NavBar />
