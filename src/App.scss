@@ -111,6 +111,19 @@ body {
   &-images {
     height: 200px;
     width: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+    // transition: .5s ease;
+    // backface-visibility: hidden;
+  }
+
+  &-images:hover {
+    
+  }
+
+  &-images:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
   }
 }
 
@@ -119,25 +132,27 @@ body {
   // flex-direction: row;
   margin: 0 auto;
   // justify-content: inherit;
-  padding: 13px 25px;
+  padding: 13px 0px 50px 0px;
   border-radius: 15px;
   font-size: 1rem;
   font-weight: 501;
   background-color: rgba(255, 255, 255, 0.35);
   text-align: center;
-  background: rgb(0, 0, 0);
+  background: none;
   border: none;
   color: #fff;
   font-weight: bold;
   align-items: stretch;
-  transition: all 0.25s ease;
+  cursor: pointer;
+  // transition: all 0.25s ease;
   // grid-auto-flow: column;
   // flex-flow: row;
   // justify-content: center;
 }
 
 .clickMe:hover {
-  box-shadow: 0 10px 20px -10px rgba(250, 5, 5, 0.943);
+  text-decoration: underline;
+  // box-shadow: 0 0 0 -10px rgba(250, 5, 5, 0.943);
 }
 
 .clickMe>span {
