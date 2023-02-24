@@ -87,7 +87,7 @@ function Header() {
             />
           </section>
         </span>
-        <p className="about-gym">
+        <div className="about-gym">
           <h3>
             Central Coast Barbell is an oldschool, 24-hour training facility.
             Our Office is open Monday-Friday 4:30 PM to 7:00 PM for New member
@@ -102,7 +102,7 @@ function Header() {
             Central Coast Barbell strives to offer a Focused & Supportive
             environment/community for all fitness levels.
           </h3>
-        </p>
+        </div>
       </main>
       <Carousel />
       <hr className="line"></hr>
