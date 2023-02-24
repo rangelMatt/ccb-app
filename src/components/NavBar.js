@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import {
-  NavLogo,
-} from "../Styles/NavbarElements";
-import "../Styles/main.css"
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import { NavLogo } from "../Styles/NavbarElements";
+import "../Styles/main.css";
 
 function NavBar() {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <>
       <Navbar className="navigation">
-        <NavLogo
-          to="/">
+        <NavLogo to="/">
           <img
             src="../images/ccb-logo.jpeg"
-            alt="centralcoastbarbell" width="90px"
-            className="brand-name" />
+            alt="centralcoastbarbell"
+            width="90px"
+            className="brand-name"
+          />
         </NavLogo>
 
         <button
@@ -39,52 +38,49 @@ function NavBar() {
             />
           </svg>
         </button>
-        <div className={
-                    isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-                  }>
-              <Nav className="me-auto">
-                  {/* <NavMenu> */}
-                  <ul className="sidenav">
-
-
-                    <Nav.Link
-                      href="/"
-                      activestyle={{ color: 'black' }}
-                      className="li link"
-                      aria-label="*"
-                    >
-                      Home
-                    </Nav.Link>
-                    <Nav.Link
-                      href="/equip"
-                      activestyle={{ color: 'black' }}
-                      className="li link"
-                      aria-label="*"
-                    >
-                      Equipment
-                    </Nav.Link>
-                    <Nav.Link
-                      href="/posingroom"
-                      activestyle={{ color: 'black' }}
-                      className="li link"
-                      aria-label="*"
-                    >
-                      Posing Room
-                    </Nav.Link>
-                    <Nav.Link
-                      href="/officeinfo"
-                      activestyle={{ color: 'black' }}
-                      className="li link"
-                      aria-label="*"
-                    >
-                      Membership/Day Pass Info
-                    </Nav.Link>
-                  </ul>
-
-              </Nav>
+        <div
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
+          <Nav className="me-auto">
+            {/* <NavMenu> */}
+            <ul className="sidenav">
+              <Nav.Link
+                href="/"
+                activestyle={{ color: "black" }}
+                className="li link"
+                aria-label="*"
+              >
+                Home
+              </Nav.Link>
+              <Nav.Link
+                href="/equip"
+                activestyle={{ color: "black" }}
+                className="li link"
+                aria-label="*"
+              >
+                Equipment
+              </Nav.Link>
+              <Nav.Link
+                href="/posingroom"
+                activestyle={{ color: "black" }}
+                className="li link"
+                aria-label="*"
+              >
+                Posing Room
+              </Nav.Link>
+              <Nav.Link
+                href="/officeinfo"
+                activestyle={{ color: "black" }}
+                className="li link"
+                aria-label="*"
+              >
+                Membership/Day Pass Info
+              </Nav.Link>
+            </ul>
+          </Nav>
         </div>
-
-
       </Navbar>
     </>
   );
