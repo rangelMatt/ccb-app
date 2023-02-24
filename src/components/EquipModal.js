@@ -19,7 +19,7 @@ function EquipModal() {
     setState(selectedEquipState)
   }
 
-  
+
   // useEffect(() => {
   //   console.log(setState(data));
   // }, []);
@@ -47,7 +47,7 @@ function EquipModal() {
             <span className="btn-group">
 
               {/* <a > */}
-                <img className="btn-group-images" alt=""
+              <img className="btn-group-images" alt=""
                 src={d.src}
                 title={d.name}
                 onClick={() => {
@@ -58,8 +58,8 @@ function EquipModal() {
                 value={d.id}
                 data-toggle="modal"
               ></img>
-                {/* </a> */}
-                <button
+              {/* </a> */}
+              <button
                 title={d.name}
                 className="clickMe"
                 onClick={() => {
