@@ -71,7 +71,7 @@ function Header() {
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href =
-                  "https://form.jotform.com/vh35danny/membership-information-record";
+                  "https://form.jotform.com/ccbarbell1081/membership-information-record";
               }}
               aria-label="*"
             />
@@ -81,7 +81,7 @@ function Header() {
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href =
-                  "https://form.jotform.com/vh35danny/central-coast-barbell-visi";
+                  "https://form.jotform.com/ccbarbell1081/waiver";
               }}
               aria-label="*"
             />
