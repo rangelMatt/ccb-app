@@ -89,7 +89,7 @@ const data = [
   {
     id: 12,
     name: "Rogue Rhino Belt Squat",
-    desc: "Great movement for isolating the hips (Hamstrings/Abductors/Glutes). Great for individuals who have herniated discs/back problems/lower back issues, as it does not load on your Back. Yet you can still target you legs. Definitely glad to have this piece as it seems appropriate to have one at our Gym",
+    desc: "Great movement for isolating the hips (Hamstrings/Abductors/Glutes). Great for individuals who have herniated discs/back problems/lower back issues, as it does not load on your Back. Yet you can still target you legs. Definitely glad to have this piece as it seems appropriate to have one at our Gym.",
     src: rogueRhino,
     link: "https://www.instagram.com/reel/Ctdyg1xuqsy/?igshid=MzRlODBiNWFlZA==",
   },
