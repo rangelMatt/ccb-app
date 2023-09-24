@@ -33,7 +33,12 @@ const Modal = ({ show, close, title, children, src, id, link }) => {
           <span className="image">
             <img src={src} style={{ width: "50%" }} alt="" />
           </span>
-          <div className="description text-break scroller">{children}</div>
+          <div
+            style={{ whiteSpace: "pre-wrap" }}
+            className="description text-break scroller"
+          >
+            {children}
+          </div>
 
           <footer className="modal_footer">
             <button className="modal-close" onClick={() => close()}>
